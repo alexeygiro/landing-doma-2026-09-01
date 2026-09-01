@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Развивающие занятия для детей онлайн — дома и в своём темпе</title>
+<meta name="description" content="Короткие интерактивные занятия для развития логики, внимания, памяти, речи и математического мышления ребёнка. Без дороги и жёсткого расписания кружка — дома, в удобное время.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://example.com/"> <!-- ЗАМЕНИТЬ НА URL ЭТОЙ СТРАНИЦЫ ПОСЛЕ РАЗМЕЩЕНИЯ -->
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Развивающие занятия для детей онлайн — дома и в своём темпе">
+<meta property="og:description" content="Короткие интерактивные занятия для развития логики, внимания, памяти, речи и математического мышления ребёнка. Без дороги и жёсткого расписания.">
+<meta property="og:url" content="https://example.com/">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Умный Лис",
+  "url": "https://example.com/",
+  "description": "Развивающие занятия для детей онлайн — короткие интерактивные задания на логику, внимание, память, речь и математическое мышление."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Это полностью заменяет репетитора?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Нет. Это ещё один формат развития, который удобно встроить в повседневную жизнь семьи — он не обязан полностью заменять преподавателя или очные занятия." }
+    },
+    {
+      "@type": "Question",
+      "name": "Нужно ли родителю сидеть рядом?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Не обязательно. Задания устроены так, чтобы ребёнок мог разобраться сам, но присутствие рядом — особенно для младших детей — может сделать занятие спокойнее." }
+    },
+    {
+      "@type": "Question",
+      "name": "Сколько времени занимает занятие?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Обычно короткие подходы по 10–20 минут. Можно позаниматься чуть дольше или остановиться раньше — жёсткого таймера нет." }
+    },
+    {
+      "@type": "Question",
+      "name": "Можно ли заниматься с планшета?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Да, занятия можно проходить с компьютера, планшета или телефона — специальных программ устанавливать не нужно." }
+    },
+    {
+      "@type": "Question",
+      "name": "Как определяется сложность заданий?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Задания выстроены по уровням — от простого к более сложному. Система проектируется так, чтобы предлагать следующий шаг, подходящий по уровню." }
+    },
+    {
+      "@type": "Question",
+      "name": "Что делать, если ребёнок ошибается?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ошибка — это часть тренировки. Ребёнок получает подсказку и может попробовать снова, без резких сообщений об ошибке и без давления." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- Ссылка на основной образовательный сайт задаётся ниже и продублирована как константа в js/script.js -->
+<!-- ЗАМЕНИТЬ НА URL ОСНОВНОГО САЙТА: сейчас используется https://example.com/ -->
+
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+
+<header class="site-header" id="top">
+  <div class="container site-header__inner">
+    <a class="logo" href="#top" aria-label="Умный Лис — на главную">
+      <svg class="logo__icon" viewBox="0 0 48 48" aria-hidden="true">
+        <polygon points="8,16 17,4 20,18" fill="var(--orange)"/>
+        <polygon points="40,16 31,4 28,18" fill="var(--orange)"/>
+        <ellipse cx="24" cy="26" rx="16" ry="14" fill="var(--orange)"/>
+        <ellipse cx="24" cy="31" rx="8.5" ry="7" fill="#FFFFFF"/>
+        <circle cx="19" cy="24" r="2" fill="var(--text)"/>
+        <circle cx="29" cy="24" r="2" fill="var(--text)"/>
+      </svg>
+      <span class="logo__text">Умный Лис</span>
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="#how-it-works">Как это работает</a>
+      <a href="#skills">Что развиваем</a>
+      <a href="#examples">Примеры</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <a class="btn btn--primary btn--small header-cta" href="https://example.com/" data-track="header_cta_click">Начать заниматься</a>
+
+    <button class="burger" id="burgerBtn" type="button" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+      <span class="sr-only">Открыть меню</span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- 1. HERO -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__content reveal">
+        <p class="eyebrow">Для семей с плотным графиком</p>
+        <h1>Развивающие занятия — дома и в своём темпе</h1>
+        <p class="hero__subtitle">Короткие интерактивные задания помогают ребёнку тренировать логику, внимание, память, речь и математическое мышление. Без поездок через город и без привязки к расписанию кружка.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--large" href="https://example.com/" data-track="hero_cta_click">Попробовать онлайн</a>
+          <a class="btn btn--ghost" href="#how-it-works">Посмотреть, как это работает</a>
+        </div>
+        <p class="hero__caption">Можно заниматься с компьютера, планшета или телефона.</p>
+      </div>
+
+      <div class="hero__visual reveal" aria-hidden="true">
+        <div class="hero-fox-wrap">
+          <svg class="hero-fox" viewBox="0 0 240 240">
+            <defs>
+              <linearGradient id="foxFur" x1="15%" y1="10%" x2="90%" y2="95%">
+                <stop offset="0%" stop-color="#FFC98A"/>
+                <stop offset="55%" stop-color="#F28C38"/>
+                <stop offset="100%" stop-color="#DB7125"/>
+              </linearGradient>
+              <linearGradient id="foxTail" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFC98A"/>
+                <stop offset="100%" stop-color="#F28C38"/>
+              </linearGradient>
+            </defs>
+
+            <!-- тень на земле -->
+            <ellipse cx="119" cy="227" rx="68" ry="9" fill="var(--text)" opacity="0.08"/>
+
+            <!-- хвост -->
+            <path d="M150,176 C204,190 234,150 221,101 C213,69 178,69 172,96 C168,114 185,123 196,109"
+                  fill="url(#foxTail)"/>
+            <path d="M196,109 C205,96 216,86 221,101 C226,114 217,123 205,121 C199,120 195,115 196,109 Z"
+                  fill="#FFFFFF"/>
+
+            <!-- тело -->
+            <ellipse cx="118" cy="170" rx="58" ry="50" fill="url(#foxFur)"/>
+            <ellipse cx="118" cy="184" rx="33" ry="28" fill="#FFF9F1"/>
+
+            <!-- лапки -->
+            <ellipse cx="97" cy="209" rx="15" ry="10" fill="#FFF9F1"/>
+            <ellipse cx="141" cy="209" rx="15" ry="10" fill="#FFF9F1"/>
+
+            <!-- уши -->
+            <polygon points="68,74 87,12 103,84" fill="url(#foxFur)"/>
+            <polygon points="170,74 151,12 135,84" fill="url(#foxFur)"/>
+            <polygon points="75,67 87,32 96,76" fill="#FBD9BC"/>
+            <polygon points="163,67 151,32 142,76" fill="#FBD9BC"/>
+
+            <!-- голова -->
+            <ellipse cx="119" cy="100" rx="57" ry="49" fill="url(#foxFur)"/>
+
+            <!-- румянец -->
+            <ellipse cx="80" cy="114" rx="10" ry="7" fill="var(--yellow)" opacity="0.7"/>
+            <ellipse cx="158" cy="114" rx="10" ry="7" fill="var(--yellow)" opacity="0.7"/>
+
+            <!-- мордочка -->
+            <ellipse cx="119" cy="120" rx="31" ry="25" fill="#FFF9F1"/>
+
+            <!-- брови -->
+            <path d="M89,80 Q99,73 109,79" fill="none" stroke="var(--text)" stroke-width="3" stroke-linecap="round"/>
+            <path d="M129,79 Q139,73 149,80" fill="none" stroke="var(--text)" stroke-width="3" stroke-linecap="round"/>
+
+            <!-- глаза -->
+            <ellipse cx="99" cy="97" rx="7.5" ry="8.5" fill="var(--text)"/>
+            <ellipse cx="139" cy="97" rx="7.5" ry="8.5" fill="var(--text)"/>
+            <circle cx="102" cy="93" r="2.4" fill="#FFFFFF"/>
+            <circle cx="142" cy="93" r="2.4" fill="#FFFFFF"/>
+
+            <!-- усы -->
+            <path d="M60,110 L86,106 M60,120 L87,118 M178,110 L152,106 M178,120 L151,118"
+                  stroke="var(--text)" stroke-width="1.6" stroke-linecap="round" opacity="0.5"/>
+
+            <!-- нос -->
+            <ellipse cx="119" cy="113" rx="6.5" ry="5" fill="var(--text)"/>
+
+            <!-- улыбка -->
+            <path d="M106,122 Q119,133 132,122" fill="none" stroke="var(--text)" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="mock-card">
+          <div class="mock-card__head">
+            <svg viewBox="0 0 48 48" class="mock-card__fox">
+              <polygon points="8,16 17,4 20,18" fill="var(--orange)"/>
+              <polygon points="40,16 31,4 28,18" fill="var(--orange)"/>
+              <ellipse cx="24" cy="26" rx="16" ry="14" fill="var(--orange)"/>
+              <ellipse cx="24" cy="31" rx="8.5" ry="7" fill="#FFFFFF"/>
+              <circle cx="19" cy="24" r="2" fill="var(--text)"/>
+              <circle cx="29" cy="24" r="2" fill="var(--text)"/>
+            </svg>
+            <span class="mock-card__tag">Задание · Логика</span>
+          </div>
+          <p class="mock-card__question">Продолжи ряд:<br><strong>2 → 4, 3 → 6, 5 → ?</strong></p>
+          <div class="mock-card__options">
+            <span>8</span><span class="is-picked">10</span><span>12</span>
+          </div>
+          <p class="mock-card__feedback">Есть решение!</p>
+        </div>
+        <div class="mock-blob mock-blob--blue"></div>
+        <div class="mock-blob mock-blob--mint"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. БОЛЬ -->
+  <section class="section pains">
+    <div class="container">
+      <h2 class="reveal">Вечер не должен проходить в дороге на очередное занятие</h2>
+      <div class="pain-grid">
+        <div class="pain-card reveal">
+          <svg class="pain-card__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="var(--orange)" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="var(--orange)" stroke-width="2" stroke-linecap="round"/></svg>
+          <p>Кружок в 18:00, а рабочий день заканчивается ровно в это же время.</p>
+        </div>
+        <div class="pain-card reveal">
+          <svg class="pain-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h6l2-4 3 8 2-4h5" fill="none" stroke="var(--orange)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p>40 минут в одну сторону — и ещё 40 минут обратно.</p>
+        </div>
+        <div class="pain-card reveal">
+          <svg class="pain-card__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2" fill="none" stroke="var(--orange)" stroke-width="2"/><path d="M3 10h18M8 3v4M16 3v4" stroke="var(--orange)" stroke-width="2" stroke-linecap="round"/></svg>
+          <p>Пропустили занятие из-за болезни — и ждём следующей недели.</p>
+        </div>
+        <div class="pain-card reveal">
+          <svg class="pain-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M7 6h7a3 3 0 010 6H8a3 3 0 000 6h8" fill="none" stroke="var(--orange)" stroke-width="2" stroke-linecap="round"/></svg>
+          <p>Хороший преподаватель есть, но стоимость регулярных занятий высокая.</p>
+        </div>
+        <div class="pain-card reveal">
+          <svg class="pain-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1116 0 8 8 0 01-16 0z" fill="none" stroke="var(--orange)" stroke-width="2"/><path d="M9 9l6 6M15 9l-6 6" stroke="var(--orange)" stroke-width="2" stroke-linecap="round"/></svg>
+          <p>Хочется заниматься регулярно — но без ещё одного жёсткого пункта в расписании.</p>
+        </div>
+      </div>
+      <p class="pains__bridge reveal">Поэтому мы сделали формат, который подстраивается под семью, а не наоборот.</p>
+    </div>
+  </section>
+
+  <!-- 3. НОВЫЙ СЦЕНАРИЙ -->
+  <section class="section scenario" id="how-it-works">
+    <div class="container">
+      <h2 class="reveal">Открыли сайт. Позанимались. Продолжили свой день.</h2>
+      <ol class="timeline">
+        <li class="timeline__step reveal">
+          <span class="timeline__num">1</span>
+          <p><strong>Ребёнок заходит в систему</strong> — с любого устройства, без установки программ.</p>
+        </li>
+        <li class="timeline__step reveal">
+          <span class="timeline__num">2</span>
+          <p><strong>Получает задания подходящего уровня</strong> — искать и подбирать их самостоятельно не нужно.</p>
+        </li>
+        <li class="timeline__step reveal">
+          <span class="timeline__num">3</span>
+          <p><strong>Занимается короткими подходами</strong> — 10–20 минут, без спешки.</p>
+        </li>
+        <li class="timeline__step reveal">
+          <span class="timeline__num">4</span>
+          <p><strong>Продолжает в следующий удобный момент</strong> — без привязки к конкретному часу.</p>
+        </li>
+      </ol>
+      <p class="scenario__note reveal">Нет необходимости быть онлайн ровно в назначенное время. Нет дороги. Можно остановиться и вернуться позже.</p>
+    </div>
+  </section>
+
+  <!-- 4. ЧТО ЭТО ЗА ПРОЕКТ -->
+  <section class="section about">
+    <div class="container about__grid">
+      <div class="reveal">
+        <h2>Не просто набор случайных заданий</h2>
+        <p>Это система коротких интерактивных занятий для развития базовых интеллектуальных и учебных навыков ребёнка. Задания организованы по возрасту, навыку, уровню сложности и последовательности развития — ребёнок постепенно движется от простого к более сложному, а составлять программу занятий самостоятельно не требуется.</p>
+      </div>
+      <div class="flow reveal" aria-hidden="true">
+        <span class="flow__chip">Навык</span>
+        <span class="flow__arrow">→</span>
+        <span class="flow__chip">Уровень</span>
+        <span class="flow__arrow">→</span>
+        <span class="flow__chip">Задание</span>
+        <span class="flow__arrow">→</span>
+        <span class="flow__chip">Практика</span>
+        <span class="flow__arrow">→</span>
+        <span class="flow__chip">Следующий шаг</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. ЧТО РАЗВИВАЮТ ЗАДАНИЯ -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <h2 class="reveal">Что развивают задания</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-card__icon" style="background:var(--blue)">🧩</div>
+          <h3>Логика</h3>
+          <p>Искать закономерности, сравнивать, делать выводы и находить решение.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card__icon" style="background:var(--mint)">🔢</div>
+          <h3>Математическое мышление</h3>
+          <p>Работать с числами и величинами не механически, а осмысленно.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card__icon" style="background:var(--yellow)">👀</div>
+          <h3>Внимание</h3>
+          <p>Замечать детали, удерживать условие задания и меньше отвлекаться.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card__icon" style="background:var(--blue)">🧠</div>
+          <h3>Память</h3>
+          <p>Запоминать и удерживать информацию, нужную для решения задачи.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card__icon" style="background:var(--mint)">💬</div>
+          <h3>Развитие речи</h3>
+          <p>Расширять словарный запас и точнее формулировать мысли.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card__icon" style="background:var(--yellow)">📐</div>
+          <h3>Пространственное мышление</h3>
+          <p>Представлять объекты в пространстве и их расположение относительно друг друга.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. ПРИМЕРЫ ЗАДАНИЙ -->
+  <section class="section examples" id="examples">
+    <div class="container">
+      <h2 class="reveal">Попробуйте прямо сейчас</h2>
+      <p class="examples__lead reveal">Четыре коротких примера — так, как задания выглядят внутри.</p>
+
+      <div class="demo-grid">
+        <div class="demo-card reveal" data-demo="1" data-correct="10">
+          <p class="demo-eyebrow">Задание 1 · Закономерность</p>
+          <div class="demo-sequence">2 → 4<br>3 → 6<br>5 → ?</div>
+          <div class="demo-options">
+            <button type="button" data-value="8">8</button>
+            <button type="button" data-value="10">10</button>
+            <button type="button" data-value="12">12</button>
+          </div>
+          <p class="demo-feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="demo-card reveal" data-demo="2" data-correct="pear">
+          <p class="demo-eyebrow">Задание 2 · Что лишнее?</p>
+          <div class="demo-emojis" aria-hidden="true">🍎 🍐 🍎 🍎</div>
+          <p class="demo-question">Что отличается от остальных?</p>
+          <div class="demo-options">
+            <button type="button" data-value="apple1" aria-label="Первое яблоко">🍎</button>
+            <button type="button" data-value="pear" aria-label="Груша">🍐</button>
+            <button type="button" data-value="apple2" aria-label="Второе яблоко">🍎</button>
+            <button type="button" data-value="apple3" aria-label="Третье яблоко">🍎</button>
+          </div>
+          <p class="demo-feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="demo-card reveal" data-demo="3" data-correct="yellow">
+          <p class="demo-eyebrow">Задание 3 · Продолжи ряд</p>
+          <div class="demo-sequence" aria-hidden="true">🔵 🟡 🔵 🟡 🔵 ?</div>
+          <div class="demo-options">
+            <button type="button" data-value="blue" aria-label="Синий">🔵</button>
+            <button type="button" data-value="yellow" aria-label="Жёлтый">🟡</button>
+            <button type="button" data-value="green" aria-label="Зелёный">🟢</button>
+          </div>
+          <p class="demo-feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="demo-card reveal" data-demo="4" data-correct="9">
+          <p class="demo-eyebrow">Задание 4 · Внимание</p>
+          <p class="demo-question">Найдите число, которое встречается дважды.</p>
+          <div class="demo-options demo-options--grid">
+            <button type="button" data-value="4">4</button>
+            <button type="button" data-value="9">9</button>
+            <button type="button" data-value="2">2</button>
+            <button type="button" data-value="7">7</button>
+            <button type="button" data-value="9">9</button>
+            <button type="button" data-value="5">5</button>
+            <button type="button" data-value="3">3</button>
+          </div>
+          <p class="demo-feedback" aria-live="polite"></p>
+        </div>
+      </div>
+
+      <div class="examples__cta reveal">
+        <a class="btn btn--primary" href="https://example.com/" data-track="example_cta_click">Посмотреть больше заданий</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. ГИБКОСТЬ / СРАВНЕНИЕ -->
+  <section class="section compare">
+    <div class="container">
+      <h2 class="reveal">Два формата — один результат: регулярная практика</h2>
+      <div class="compare-grid">
+        <div class="compare-card reveal">
+          <h3>Очный формат</h3>
+          <ul>
+            <li>Фиксированное время занятия</li>
+            <li>Дорога до места и обратно</li>
+            <li>Перенести занятие обычно не так просто</li>
+            <li>Стоимость зависит от количества уроков</li>
+            <li>Ребёнок подстраивается под общий темп группы</li>
+          </ul>
+        </div>
+        <div class="compare-card compare-card--accent reveal">
+          <h3>Онлайн-формат «Умного Лиса»</h3>
+          <ul>
+            <li>Можно открыть в удобное время</li>
+            <li>Занятия проходят дома</li>
+            <li>Короткие подходы по 10–20 минут</li>
+            <li>Ребёнок двигается в своём темпе</li>
+            <li>Легко возвращаться к практике регулярно</li>
+          </ul>
+        </div>
+      </div>
+      <p class="compare__disclaimer reveal">Онлайн-занятия не обязаны полностью заменять преподавателя. Это ещё один формат развития, который удобно встроить в повседневную жизнь семьи.</p>
+    </div>
+  </section>
+
+  <!-- 8. ДОМА — НЕ ЗНАЧИТ РОДИТЕЛЬ СТАЛ УЧИТЕЛЕМ -->
+  <section class="section reassure">
+    <div class="container reassure__grid">
+      <div class="reveal">
+        <h2>Вам не придётся каждый вечер искать задания в интернете</h2>
+        <ul class="reassure__list">
+          <li>Задания уже подготовлены — собирать программу самостоятельно не нужно.</li>
+          <li>Структура учитывает уровень ребёнка и постепенно усложняется.</li>
+          <li>Есть понятная последовательность — от простого к сложному.</li>
+          <li>Ребёнок получает обратную связь по каждому заданию.</li>
+          <li>В полной версии проекта предусмотрен отдельный экран, где видно, чем занимался ребёнок.</li>
+        </ul>
+      </div>
+      <div class="reassure__visual reveal" aria-hidden="true">
+        <div class="mini-mock">
+          <div class="mini-mock__row"><span>Логика</span><span class="mini-mock__bar" style="--w:80%"></span></div>
+          <div class="mini-mock__row"><span>Математика</span><span class="mini-mock__bar" style="--w:55%"></span></div>
+          <div class="mini-mock__row"><span>Внимание</span><span class="mini-mock__bar" style="--w:65%"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. КОРОТКИЕ ЗАНЯТИЯ -->
+  <section class="section short-session">
+    <div class="container">
+      <h2 class="reveal">Не нужно освобождать весь вечер</h2>
+      <p class="short-session__lead reveal">Например, несколько заданий можно выполнить за короткий подход и вернуться к занятиям позже.</p>
+      <div class="schedule reveal">
+        <div class="schedule__item"><span class="schedule__time">17:10</span><span>Пришли домой</span></div>
+        <div class="schedule__item"><span class="schedule__time">17:30</span><span>Перекус</span></div>
+        <div class="schedule__item schedule__item--accent"><span class="schedule__time">18:00</span><span>15 минут заданий</span></div>
+        <div class="schedule__item"><span class="schedule__time">18:15</span><span>Свободное время</span></div>
+      </div>
+      <p class="short-session__note reveal">Не нужно ехать ещё 40 минут на другой конец города.</p>
+    </div>
+  </section>
+
+  <!-- 10. ДЛЯ КАКИХ СЕМЕЙ -->
+  <section class="section families">
+    <div class="container">
+      <h2 class="reveal">Для каких семей это удобно</h2>
+      <div class="families-grid">
+        <div class="family-card reveal">Плотный семейный график</div>
+        <div class="family-card reveal">Несколько детей в семье</div>
+        <div class="family-card reveal">Частые поездки и переезды</div>
+        <div class="family-card reveal">Хорошие кружки далеко от дома</div>
+        <div class="family-card reveal">Ребёнку комфортнее заниматься дома</div>
+        <div class="family-card reveal">Нужна дополнительная практика помимо школы</div>
+        <div class="family-card reveal">Хочется формата без фиксированного расписания</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. FAQ -->
+  <section class="section faq" id="faq">
+    <div class="container">
+      <h2 class="reveal">Частые вопросы</h2>
+      <div class="faq-list reveal">
+
+        <div class="faq-item">
+          <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a1">Это полностью заменяет репетитора?</button></h3>
+          <div class="faq-answer" id="faq-a1">
+            <p>Нет. Это ещё один формат развития, который удобно встроить в повседневную жизнь семьи — он не обязан полностью заменять преподавателя или очные занятия.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a2">Нужно ли родителю сидеть рядом?</button></h3>
+          <div class="faq-answer" id="faq-a2">
+            <p>Не обязательно. Задания устроены так, чтобы ребёнок мог разобраться сам, но присутствие рядом — особенно для младших детей — может сделать занятие спокойнее.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a3">Сколько времени занимает занятие?</button></h3>
+          <div class="faq-answer" id="faq-a3">
+            <p>Обычно короткие подходы по 10–20 минут. Можно позаниматься чуть дольше или остановиться раньше — жёсткого таймера нет.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a4">Можно ли заниматься с планшета?</button></h3>
+          <div class="faq-answer" id="faq-a4">
+            <p>Да, занятия можно проходить с компьютера, планшета или телефона — специальных программ устанавливать не нужно.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a5">Как определяется сложность заданий?</button></h3>
+          <div class="faq-answer" id="faq-a5">
+            <p>Задания выстроены по уровням — от простого к более сложному. Система проектируется так, чтобы предлагать следующий шаг, подходящий по уровню ребёнка.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a6">Что делать, если ребёнок ошибается?</button></h3>
+          <div class="faq-answer" id="faq-a6">
+            <p>Ошибка — это часть тренировки. Ребёнок получает подсказку и может попробовать снова, без резких сообщений об ошибке и без давления.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. ФИНАЛЬНЫЙ CTA -->
+  <section class="section final-cta">
+    <div class="container final-cta__inner reveal">
+      <h2>Развитие ребёнка можно встроить в жизнь семьи, а не наоборот</h2>
+      <p>Откройте задания тогда, когда удобно вам и ребёнку.</p>
+      <a class="btn btn--primary btn--large" href="https://example.com/" data-track="final_cta_click">Перейти к занятиям</a>
+      <p class="final-cta__caption">Без дороги. Без жёсткого расписания. В своём темпе.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div class="site-footer__brand">
+      <span class="logo__text">Умный Лис</span>
+      <p>Развивающие занятия для детей онлайн.</p>
+    </div>
+    <nav class="site-footer__nav">
+      <a href="#how-it-works">Как это работает</a>
+      <a href="#skills">Что развиваем</a>
+      <a href="#examples">Примеры</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <nav class="site-footer__legal">
+      <a href="#">Политика конфиденциальности</a>
+      <a href="#">Пользовательское соглашение</a>
+    </nav>
+  </div>
+  <p class="site-footer__copy container">© <span id="currentYear">2026</span> Умный Лис</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
